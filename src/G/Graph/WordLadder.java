@@ -7,6 +7,10 @@ public class WordLadder {
 // 问能不能从S变到T，每个word是个二进制字符串，一次变化是flip任意一位bit，每次变化后的word都要在allowed list里
 //follow up是allowed list不变，然后给一列{S,T}，然后返回一列{能不能变}，就把allowed list里的connected component都预处理出来，
 // 然后看各个S,T是不是在同一个component里
+
+  //第二轮 给一堆01组成的字符串 所有字符串都是相同长度 这些字符串表示安全的pattern，每个pattern之间可以通过flip任意一个bit进行互相转换 ，
+  // 给定起始pattern和终止pattern，判断能不能成功转换，所有intermediate状态必须是安全的，非常类似word ladder。
+  // follow up：给多个起始状态和多个终止状态
   public boolean can(String S,String T, List<String> allowed){
     //duplicates in allowed? target in allowed? length of word?
     //undirected graph, are S and T connected?, Time: allowed list+ E

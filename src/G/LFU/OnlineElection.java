@@ -1,4 +1,4 @@
-package G.BinarySearch;
+package G.LFU;
 
 import java.util.*;
 
