@@ -1,6 +1,6 @@
 package Array;
 
-import G.Array.MaxSquare;
+import Google.Array.MaxSquare;
 
 // https://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=568531&extra=page%3D2%26filter%3Dsortid%26sortid%3D311%26searchoption%255B3088%255D%255Bvalue%255D%3D1%26searchoption%255B3088%255D%255Btype%255D%3Dradio%26searchoption%255B3089%255D%255Bvalue%255D%255B3%255D%3D3%26searchoption%255B3089%255D%255Btype%255D%3Dcheckbox%26searchoption%255B3046%255D%255Bvalue%255D%3D1%26searchoption%255B3046%255D%255Btype%255D%3Dradio%26orderby%3Ddateline&page=1
 public class MaxSizeSubarraySum {

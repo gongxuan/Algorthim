@@ -2,10 +2,12 @@ package Graph.BellmanFord;
 
 //一轮是给一个2darray求从左上走到右下的求最小cost的路径，里面有负数，可以上下左右走。
 //https://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=571356&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3088%5D%5Bvalue%5D%3D1%26searchoption%5B3088%5D%5Btype%5D%3Dradio%26searchoption%5B3089%5D%5Bvalue%5D%5B3%5D%3D3%26searchoption%5B3089%5D%5Btype%5D%3Dcheckbox%26searchoption%5B3046%5D%5Bvalue%5D%3D1%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311%26orderby%3Ddateline
+//https://www.1point3acres.com/bbs/thread-575823-1-1.html
 public class MinCostPathMatrix {
   int rows,cols;
   static int[][] D = {{0,1},{1,0},{-1,0},{0,-1}};
   public int bellmanFord(int[][] M){
+    //Assumption: Can reuse cell!!
     rows = M.length;
     cols = M[0].length;
     Integer[][] dis = new Integer[rows][cols];
