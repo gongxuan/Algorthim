@@ -1,4 +1,4 @@
-package Google;
+package Google.API_Design;
 
 import java.util.*;
 
@@ -8,10 +8,10 @@ public class PrintLog {
   //clarify: type of id? TS is given? print method?valid input?
   //List store finished logs
   //Map<Id,Log> store logs, if it's finished, add it to list so it's easy to print finished logs
-  List<Log> finishedLogs;
+  TreeSet<Log> finishedLogs;
   Map<Integer,Log> idLogMap;
   public PrintLog(){
-    finishedLogs = new ArrayList<>();
+    finishedLogs = new TreeSet<>((l1,l2)->l1.start-l2.start);
     idLogMap = new HashMap<>();
   }
   public void start(int id,int timestamp){
@@ -22,11 +22,17 @@ public class PrintLog {
     cur.end = timestamp;
     finishedLogs.add(cur);
   }
+  public void print(){
+    Iterator<Log> it = finishedLogs.iterator();
+    while(it.hasNext()){
+      System.out.print(it.next()+" ");
+    }
+    System.out.println();
+  }
   class Log{
     int start,end;
     public Log(int s){
       start  = s;
-
     }
   }
 }

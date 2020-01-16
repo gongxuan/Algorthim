@@ -1,4 +1,4 @@
-package Google;
+package Google.Array;
 
 public class QuickSelect {
     public double findMedian(int[] arr){

@@ -1,4 +1,4 @@
-package Google;
+package Google.Array;
 //https://www.1point3acres.com/bbs/thread-556631-1-1.html
 public class PushBoxesInStorage {
 //给定一堆不同高度的objects和一堆仓库storage的空间。东西只能从左向右推进仓库，如果有个位置太低了，那么后面的位置都会被前面的位置局限住。

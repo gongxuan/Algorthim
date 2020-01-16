@@ -1,4 +1,4 @@
-package Google.APIDesign;
+package Google.API_Design;
 import java.util.*;
 
 public class Cooldown {

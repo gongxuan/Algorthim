@@ -1,4 +1,4 @@
-package Google;
+package Google.Graph;
 
 import com.sun.tools.javac.util.Pair;
 import java.util.*;

@@ -1,4 +1,4 @@
-package Google;
+package Google.Tree;
 
 public class TreeNode {
     public int val;

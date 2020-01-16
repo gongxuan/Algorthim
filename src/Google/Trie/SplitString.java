@@ -11,7 +11,11 @@ public class SplitString {
 //follow up: 优化到O(N)的time complexity
 public static void main(String[] args) {
   SplitString ins  = new SplitString();
-  List<String> res = ins.split("abababababababababab");
+//  List<String> res = ins.split("abababababababababab");
+  //Time: N*sqr root of N
+  String s = "aaaaaaaaaaaaaaa";
+  List<String> res = ins.split(s);
+  System.out.println(res.get(res.size()-2).length()+" "+s.length());
   ins.print(res);
 }
   public List<String> split(String s){

@@ -1,7 +1,5 @@
 package Google.Tree;
 
-import Google.TreeNode;
-
 public class ConstructBinaryTreeWithInorderList {
 //lc 1110，follow up 是给一个balenced binary search tree 的 list of inorder traversal，重建树，
 // 再follow up是如果inorder traversal不是list是streaming，并且已知树的总节点个数，重建树。

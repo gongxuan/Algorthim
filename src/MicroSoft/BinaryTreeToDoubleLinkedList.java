@@ -1,6 +1,6 @@
 package MicroSoft;
 
-import Google.TreeNode;
+import Google.Tree.TreeNode;
 
 import java.util.Stack;
 

@@ -1,4 +1,4 @@
-package Google.APIDesign;
+package Google.API_Design;
 import java.util.*;
 //第四轮，白人西装大哥，设计一个skip iterator，普通的iterator但是可以调一个skip的函数跳过一些数，这个skip函数可以调很多次，可以skip任何数，
 // 重复多次也许，也可以在任何时间调他。
